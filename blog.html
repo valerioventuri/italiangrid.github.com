@@ -1,0 +1,12 @@
+---
+layout: default
+title: italiangrid blog
+---
+
+{% assign latest = site.posts.first %}
+
+<div id="home">
+  <h2><a href="{{ latest.url }}">{{ latest.title }}</a></h2>
+	{{ latest.content | truncate: 1000 }}
+	<a id="more" href="{{ latest.url }}">Read More &raquo;</a>
+</div>
