@@ -2,7 +2,19 @@
 layout: default
 ---
 
+{% assign author = site.authors[page.author] %}
+
 <div id="post">
+	
+	<div>
+		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+		<span class="author">{{ author.display_name }}</span>
+	</div>
+
 	<h1>{{ page.title }}</h1>
+
+	<p>{{ page.date | date_to_string}}</p>
+	
 	{{ content }}
+
 </div>
