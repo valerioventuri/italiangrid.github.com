@@ -3,23 +3,55 @@ layout: default
 title: italiangrid
 ---
 
-<div id="home">
-	
+<div class="container">
 	<div class="row">
-	  
-		<div class="span8 lead">
-			What we do ..
+		<div class="span8 lead marketing">
+			<h1>Italian Grid Infrastructure!? middleware developement</h1>
+			<p>We do middleware for distributed computing and storage.</br>
+				We do large part of the middleware that runs the <a href="http://wlcg.web.cern.ch/">WLCG</a> and 
+				<a href="http://www.egi.eu/">EGI</a> infrastructures, that support the computing that discovered the 
+				<a href="http://press.web.cern.ch/press-releases/2012/07/cern-experiments-observe-particle-consistent-long-sought-higgs-boson">Higgs boson</a> and many other research communities in Europe and the US.
+			</p>
 		</div>
-	  
-		<div class="span4">
-	  	<h4>Latest blog posts</h4>
+		<div class="span4 marketing">
+	  	<h3>Latest post from <a href="/blog.html">our blog</a></h3>
 	  	<ul class="unstyled">
-	    	{% for post in site.posts %}
-	      	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	    	{% for post in site.posts limit:2 %}
+	      	<li>
+						<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+						<p>{{ post.summary }}</p>
+					</li>
 	    	{% endfor %}
 	  		</ul>
 		</div>
-	
 	</div>
-	
 </div>
+
+<hr class="soften">
+
+<div class="container">
+	<div class="marketing">
+	<h1 class="text-center">Our middleware products</h1>
+	<div class="row">
+		<div class="span3">
+			<h3 class="text-center">VOMS</h3>
+			<p>The Virtual Organization Membership Service is a Grid attribute authority which serves as central repository for VO user authorization information. These information are used to issue trusted attribute certificates and assertions used in the Grid environment for authorization purposes.</p>
+		</div>
+		<div class="span3">
+			<h3 class="text-center">CREAM</h3>
+			<p>The CREAM (Computing Resource Execution And Management) Service is a simple, lightweight service that implements all the operations at the Computing Element (CE) level.</p>
+		</div>
+		<div class="span3">
+			<h3 class="text-center">StoRM</h3>
+			<p>StoRM (STOrage Resource Manager) is a light, scalable, flexible, high-performance and file system independent storage manager service (SRM) implementing the standard SRM interface version 2.2.</p>
+		</div>
+		<div class="span3">
+			<h3 class="text-center">WMS</h3>
+			<p>The Workload Management System (WMS) is responsible for distributing and managing tasks across computing and storage resources available on a Grid. WMS assigns user jobs to CEs and SEs belonging to a Grid environment in a convenient fashion.</p>
+		</div>
+	</div>
+	<br/>
+	<p class="lead">See all our repositories on <a href="https://github.com/italiangrid">GitHub</a>.
+	</div>
+</div>
+	
