@@ -11,11 +11,11 @@ Then you can get a server up and running with your site running
 	
 and browse it at http://0.0.0.0:4000.
 
-## Add an author
+# Add an author
 
 See _config.yml to see how authors are defined.
 
-## Add a post
+# Add a post
 
 Create a file of your preferred markup under _posts, following the naming conventions of those already 
 in there. Provide a name, an author, and a summary for the post in the 
