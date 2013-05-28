@@ -12,7 +12,7 @@ title: italiangrid blog
 		<h3>{{ site.authors[post.author].display_name }}</h3>
 		<p>{{ post.date | date_to_string}}
 		<p>{{ post.content | truncate: 1000 }}</p>
-		<p><a id="more" href="{{ post.url }}">Read More &raquo;</a></p>
+		<p><a id="more" href="{{ base.url }}{{ post.url }}">Read More &raquo;</a></p>
 	
 	{% endfor %}
 
